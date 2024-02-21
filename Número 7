@@ -1,0 +1,39 @@
+programa {
+	
+	funcao inicio() {
+
+		//Declarando variáveis
+		
+		cadeia descricaoProduto
+		inteiro quantidadeAdquirida
+		real precoUnitario
+		
+		escreva("Digite a descrição do produto: ")
+		leia(descricaoProduto)
+		
+		escreva("Digite a quantidade adquirida: ")
+		leia(quantidadeAdquirida)
+		
+		escreva("Digite o preço unitário: R$ ")
+		leia(precoUnitario)
+		
+		real total = quantidadeAdquirida * precoUnitario
+		real desconto
+		
+		se (quantidadeAdquirida <= 5) {
+			desconto = total * 0.02
+		} senao {
+			se (quantidadeAdquirida <= 10) {
+				desconto = total * 0.03
+			} senao {
+				desconto = total * 0.05
+			}
+		}
+		
+		real totalPagar = total - desconto
+		
+		escreva("Total: R$", total)
+		escreva("\nDesconto: R$", desconto)
+		escreva("\nTotal a pagar: R$", totalPagar)
+	}
+}
