@@ -1,0 +1,50 @@
+programa
+{
+	
+	funcao inicio()
+ {
+		
+// declarando variaveis 
+
+    inteiro tempoCasada , tempoCasado
+    cadeia nome, sexo, estadoCivil, feminino
+    
+    
+// solicitando dados 
+
+    escreva("Digite o nome: ")
+    leia(nome)
+
+    escreva("Digite o sexo: ")
+    leia(sexo)
+
+    escreva("Digite o estado civil: ")
+    leia(estadoCivil)
+
+    
+    se ((sexo == "feminino") e (estadoCivil == "casada")) 
+    escreva("Digite o tempo de casada: ")
+    leia(tempoCasada)
+    
+    escreva("==Dados do Usuário==")
+    escreva("\nNome: ", nome)
+    escreva("\nSexo: ", sexo)
+    escreva("\nEstado Civil: ", estadoCivil)
+    escreva("\nTempo de casada: ", tempoCasada)
+    
+    
+    se ((sexo == "masculino") e (estadoCivil == "casado")){
+    escreva("Digite o tempo de casado:")	
+    leia(tempoCasado)
+    
+    escreva("==Dados do Usuário==")
+    escreva("\nNome: ", nome)
+    escreva("\nSexo: ", sexo)
+    escreva("\nEstado Civil: ", estadoCivil)  
+    escreva("\nTempo de casado:", tempoCasado)
+    
+     }
+    
+	}
+
+}
