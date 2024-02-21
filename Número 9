@@ -1,0 +1,33 @@
+programa {
+	
+	funcao inicio() {
+
+		//Declarando variáveis
+		
+		real rendaMensal
+		real valorEmprestimo
+		inteiro numPrestacoes
+
+		//Adquirindo informações
+		
+		escreva("Digite a renda mensal do solicitante: R$ ")
+		leia(rendaMensal)
+		
+		escreva("Digite o valor total do empréstimo solicitado: R$ ")
+		leia(valorEmprestimo)
+		
+		escreva("Digite o número de prestações desejadas: ")
+		leia(numPrestacoes)
+		
+		real valorPrestacao = valorEmprestimo / numPrestacoes
+		
+		real limiteValorEmprestimo = rendaMensal * 10
+		real limiteValorPrestacao = rendaMensal * 0.3
+		
+		se (valorEmprestimo <= limiteValorEmprestimo e valorPrestacao <= limiteValorPrestacao) {
+			escreva("Empréstimo concedido!")
+		} senao {
+			escreva("Empréstimo não pode ser concedido.")
+		}
+	}
+}
