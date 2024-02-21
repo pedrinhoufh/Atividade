@@ -1,0 +1,35 @@
+programa
+{
+	
+	funcao inicio(){
+
+		//Declarando variáveis
+
+		
+		inteiro resultado, a = 1, b = 3
+		cadeia operacao
+		
+		escreva ("Escolha a operação desejada: ")
+		leia (operacao)
+
+		se (operacao == "+") {
+			escreva (a + b)
+		}
+		senao{ 
+			se (operacao == "-"){
+			escreva (a - b)
+		}
+		}
+
+		se (operacao == "*"){
+			escreva (a * b)
+		}
+		senao {
+			se (operacao =="/") {
+				escreva (a / b)
+			}
+		}
+			
+		
+	}
+}
