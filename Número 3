@@ -1,0 +1,31 @@
+programa
+ {
+	
+	funcao inicio()
+ {
+		
+     // Declarando variáveis
+      
+      inteiro valora, valorc, valorb
+
+    //Leitura dos valores
+
+     escreva("Digite o valor de A: ")
+     leia(valora)
+     
+     escreva("Digite o valor de B: ")
+     leia(valorb)
+
+    // Calculo
+    se (valora == valorb){ 
+    	valorc = valora + valorb
+    } senao{ 
+     valorc = valora * valorb
+    }
+
+
+   // Mostrar resultado
+     escreva("C: ", valorc)
+
+	}
+}
